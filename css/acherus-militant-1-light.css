@@ -1,0 +1,27 @@
+/*
+Font: 		Acherus Militant 1
+Style: 		Light
+URL: 		https://www.youworkforthem.com/font/T7348/acherus-militant
+Foundry: 	Horizon Type
+Foundry: 	https://www.youworkforthem.com/designer/797/horizon-type
+Copyright:	Copyright (c) 2016 by Ufuk Arac›o€lu. All rights reserved.
+Version: 	17
+Created:	December 14, 2016
+License: 	https://www.youworkforthem.com/font-license 
+License: 	The WebFont(s) listed in this document must follow the YouWorkForThem
+			WebFont license rules. All other parties are strictly restricted 
+			from using the WebFonts(s) listed without a purchased license. 
+			All details above must always remain unaltered and visible in your CSS.
+*/
+
+@font-face {
+	font-family: 'AcherusMilitant1-Light';
+	src: url('acherus-militant-1-light.eot');
+	src: url('acherus-militant-1-light.eot?#iefix') format('embedded-opentype'),
+             url('acherus-militant-1-light.woff2') format('woff2'),
+	     url('acherus-militant-1-light.woff') format('woff'),
+	     url('acherus-militant-1-light.ttf') format('truetype'),
+	     url('acherus-militant-1-light.svg#youworkforthem') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
