@@ -1,14 +1,37 @@
 /* main color : #a46934;  background-color: #2c2c2b;*/
-
+/* font-family: 'AcherusGrotesque-Regular', Helvetica, Arial, Sans-Serif;
+font-family: 'AcherusMilitant3-Light', Helvetica, Arial, Sans-Serif;
+ */
 
 /* General styling */
 
 @font-face {
-    font-family: 'AcherusMilitant1-Light';
-    src: url('acherus-militant-1-light.eot');
-    src: url('acherus-militant-1-light.eot?#iefix') format('embedded-opentype'), url('acherus-militant-1-light.woff2') format('woff2'), url('acherus-militant-1-light.woff') format('woff'), url('acherus-militant-1-light.ttf') format('truetype'), url('acherus-militant-1-light.svg#youworkforthem') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'AcherusGrotesque-ExtraBold';
+    src: url('webfonts/acherus-grotesque-extrabold.eot');
+    src: url('webfonts/acherus-grotesque-extrabold.eot?#iefix') format('embedded-opentype'),
+             url('webfonts/acherus-grotesque-extrabold.woff2') format('woff2'),
+         url('webfonts/acherus-grotesque-extrabold.woff') format('woff'),
+         url('webfonts/acherus-grotesque-extrabold.ttf') format('truetype'),
+         url('webfonts/acherus-grotesque-extrabold.svg#youworkforthem') format('svg');
+}
+@font-face {
+    font-family: 'AcherusMilitant3-Light';
+    src: url('webfonts/acherus-militant-3-light.eot');
+    src: url('webfonts/acherus-militant-3-light.eot?#iefix') format('embedded-opentype'),
+             url('webfonts/acherus-militant-3-light.woff2') format('woff2'),
+         url('webfonts/acherus-militant-3-light.woff') format('woff'),
+         url('webfonts/acherus-militant-3-light.ttf') format('truetype'),
+         url('webfonts/acherus-militant-3-light.svg#youworkforthem') format('svg');
+ }
+ @font-face {  
+    font-family: 'AcherusGrotesque-Regular';
+    src: url('webfonts/acherus-grotesque-regular.eot');
+    src: url('webfonts/acherus-grotesque-regular.eot?#iefix') format('embedded-opentype'),
+             url('webfonts/acherus-grotesque-regular.woff2') format('woff2'),
+         url('webfonts/acherus-grotesque-regular.woff') format('woff'),
+         url('webfonts/acherus-grotesque-regular.ttf') format('truetype'),
+         url('webfonts/acherus-grotesque-regular.svg#youworkforthem') format('svg');
+   
 }
 
 html {
@@ -22,7 +45,12 @@ html, body {
 
 body {
     font-size: 18px;
-    font-family: 'AcherusMilitant1-Light', Helvetica, Arial, Sans-Serif;
+    font-family: 'AcherusGrotesque-Regular', Helvetica, Arial, Sans-Serif;
+    -moz-font-feature-settings:'aalt=0,case=0,dnom=0,frac=0,liga=0,numr=0,pnum=0,sinf=0,sups=0,tnum=0';
+    
+}
+h2 {
+    font-family: 'AcherusMilitant3-Light', Helvetica, Arial, Sans-Serif;
 }
 
 input::-moz-placeholder {
@@ -57,8 +85,16 @@ a:hover, a:active {
 }
 
 .widthToggle {
-    width: 730px !important;
+    width: 1030px !important;
 }
+.lighter {
+    font-weight: 100;
+    font-family: 'AcherusMilitant3-Light', Helvetica, Arial, Sans-Serif;
+
+}
+.lighter-two {
+    font-family: 'AcherusGrotesque-Regular', Helvetica, Arial, Sans-Serif;
+}    
 
 .change .barone {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
@@ -97,11 +133,18 @@ a:hover, a:active {
 /* Navbar styling */
 
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-    margin-left: 5px;
+    font-size: 33px !important;
+    line-height: 27px;
     color: #a46934;
     font-size: 26px;
+    font-family: 'AcherusMilitant3-Light', Helvetica, Arial, Sans-Serif;
 }
-
+@media (max-width: 862px ) {
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    font-size: 28px !important;
+    
+    }
+}
 .navbar-inverse {
     background: #2c2c2b;
     border: none;
@@ -227,6 +270,9 @@ a:hover, a:active {
     -o-transition: .25s ease-in-out;
     transition: .5s ease-in-out;
 }
+#barsClose {
+    display: none;
+}
 
 .header {
     position: relative;
@@ -240,7 +286,7 @@ a:hover, a:active {
     right: 0;
     height: 100%;
     width: 0;
-    margin-right: -83px;
+    margin-right: -355px;
     transform: skewX(10deg);
     height: 100%;
     position: relative;
@@ -250,8 +296,9 @@ a:hover, a:active {
     position: fixed;
     top: 0;
     right: -20px;
-    z-index: 99999;
+    z-index: 9999;
     display: none;
+    font-family: 'AcherusMilitant3-Light', Helvetica, Arial, Sans-Serif;
 }
 
 .menu-list ul {
@@ -271,6 +318,7 @@ a:hover, a:active {
     color: #fff;
     line-height: 0.8;
     font-weight: 200;
+    font-family: 'AcherusMilitant3-Light', Helvetica, Arial, Sans-Serif;
 }
 
 .menu-list ul li a:hover {
@@ -358,7 +406,7 @@ a:hover, a:active {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 #video-background {
@@ -379,9 +427,17 @@ a:hover, a:active {
 }
 
 .main-video .overlay h1 {
-    font-size: 80px;
+    font-size: 60px;
     color: #fff;
     font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'AcherusGrotesque-ExtraBold', Helvetica, Arial, Sans-Serif;
+}
+@media (min-width: 1600px){
+    .main-video .overlay h1 {
+    font-size: 70px;
+ 
+    }
 }
 
 .overlay:after {
@@ -390,7 +446,7 @@ a:hover, a:active {
     height: 4px;
     background-color: #a46934;
     position: absolute;
-    top: 113%;
+    bottom: -25px; ;
 }
 
 a[href^="http://maps.google.com/maps"] {
@@ -443,9 +499,23 @@ a[href^="https://maps.google.com/maps"] {
     height: 100%;
     position: relative;
 }
-
+#showMap:hover {
+    color: #fff;
+}
+.mapsvg .st0{
+    fill:#ffffff;
+}
+#showMap:hover .mapsvg .st0{
+    fill: #fff !important;
+}
 #aerial {
     display: none;
+}
+#showAerial:hover {
+    color: #fff;
+}
+#showAerial:hover .aerialsvg .st1{
+    fill: #fff !important;
 }
 
 #aerial img {
@@ -455,9 +525,9 @@ a[href^="https://maps.google.com/maps"] {
 
 .map-footer {
     position: absolute;
-    bottom: 9.9%;
+    bottom: 10%;
     right: 0;
-    width: 250px;
+    width: 225px;
     height: 40px;
     background: #a46934;
     line-height: 40px;
@@ -465,8 +535,9 @@ a[href^="https://maps.google.com/maps"] {
 
 .map-footer p {
     display: inline;
-    margin-left: 30px;
+    margin-left: 25px;
     font-size: 14px;
+    margin-right: 5px;
 }
 
 .map-footer p {
@@ -493,6 +564,7 @@ a[href^="https://maps.google.com/maps"] {
     color: #a46934;
     margin-bottom: 20px;
     margin-left: 13px;
+    margin-top: 0;
 }
 
 .times h2:after {
@@ -581,6 +653,7 @@ a[href^="https://maps.google.com/maps"] {
     color: #fff;
     font-size: 18px;
     margin-bottom: 25px;
+    font-weight: 500;
 }
 
 .site-plan .site-img {
@@ -612,7 +685,7 @@ a[href^="https://maps.google.com/maps"] {
 .dot-one-img {
     position: absolute;
     top: 185px;
-    left: 30px;
+    left: 7px;
     display: none;
 }
 
@@ -659,6 +732,10 @@ a[href^="https://maps.google.com/maps"] {
     width: 100%;
     min-height: 100%;
 }
+   
+.site-overview .col-md-6 {
+    padding: 0;
+}
 
 .site-overview .overview-text {
     margin-top: 20px;
@@ -683,7 +760,7 @@ a[href^="https://maps.google.com/maps"] {
 
 .site-overview .container {
     padding: 100px 65px;
-    max-width: 950px;
+    max-width: 965px;
 }
 
 .site-overview h2 {
@@ -745,7 +822,7 @@ a[href^="https://maps.google.com/maps"] {
 }
 
 .history .container {
-    max-width: 950px;
+    max-width: 970px;
 }
 
 .history.overview-text {
@@ -783,13 +860,23 @@ a[href^="https://maps.google.com/maps"] {
     top: 70px;
     left: 0;
 }
+.history .container-second {
+        display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 .history img {
-    padding: 7px 0px;
+    padding: 5px ;
+    
+
 }
 
 .history .col-md-2 {
     padding: 0;
+}
+.history .col-md-4 {
+        padding: 0px ;
 }
 
 @media (max-width: 991px) {
@@ -892,17 +979,17 @@ a[href^="https://maps.google.com/maps"] {
 
 /* start download styling */
 
-.download {
+.download, .leeds {
     width: 100%;
     min-height: 100%;
 }
 
 .download .container {
-    max-width: 650px;
+    max-width: 663px;
     padding: 150px 15px;
 }
 
-.download h2 {
+.download h2,  .leeds h2 {
     font-size: 48px;
     position: relative;
     color: #a46934;
@@ -911,21 +998,21 @@ a[href^="https://maps.google.com/maps"] {
 }
 
 @media (max-width: 641px) {
-    .download .container {
+    .download .container, , .leeds .container {
         padding: 150px 20px;
     }
-    .download h2 {
+    .download h2,  .leeds h2 {
         font-size: 36px;
     }
 }
 
 @media (max-width: 361px) {
-    .download h2 {
+    .download h2,  .leeds h2 {
         font-size: 28px;
     }
 }
 
-.download h2:after {
+.download h2:after,  .leeds h2:after {
     content: '';
     width: 170px;
     height: 2px;
@@ -935,7 +1022,7 @@ a[href^="https://maps.google.com/maps"] {
     left: 0;
 }
 
-.download p {
+.download p{
     color: #fff;
     font-size: 18px;
     margin-bottom: -30px;
@@ -951,7 +1038,7 @@ a[href^="https://maps.google.com/maps"] {
 
 /*--- form -- */
 
-#gform_1 {}
+
 
 #gform_1 h3 {
     display: none;
@@ -959,22 +1046,24 @@ a[href^="https://maps.google.com/maps"] {
 
 #gform_1 input {
     width: 100%;
+    height: 30px;
 }
 
 #gform_1 .gform_button {
-    width: 110px;
-    padding: 10px;
+    width: 95px;
+    padding: 10px 100px 10px 10px;
     background: #a46934;
     color: #2c2c2b;
     border: none;
     position: relative;
     margin-top: 20px;
     text-transform: uppercase;
+    height: 40px;
 }
 
 #gform_1 .gform_button:hover {
     color: #a46934;
-    background: #2c2c2b;
+    background: #fff;
     transition: 0.5;
 }
 
@@ -1023,14 +1112,55 @@ a[href^="https://maps.google.com/maps"] {
 }
 
 .gform_wrapper ul.gform_fields li.gfield {
-    height: 45px;
+    height: 38px;
     margin: 0;
 }
 
 
 /* end download styling */
-
-
+/* Start leeds styling  */
+.leeds .container {
+     padding: 10% 15px;
+}
+@media (max-width: 991px){
+    .leeds .container {
+     padding: 100px 50px;
+}
+}
+.leeds p{
+    color: #fff;
+    font-size: 18px;
+ } 
+ .leeds h4 {
+     color: #fff;
+    font-size: 20px;
+ }  
+.leeds img {
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    clear: both;
+ }   
+.leeds .wrap {
+    
+   float: left;
+   width: 74%;
+   font-size: 14px;
+}
+.leeds li {
+    color: #fff;
+    font-size: 14px;
+}
+.leeds strong {
+    font-size: 18px;
+}
+.leeds .table-bordered {
+    color: #fff;
+}
+.leeds a {
+    color: #a46934;
+}
+/* end leeds styling  */
 /* Start footer styling */
 
 footer {
@@ -1077,6 +1207,7 @@ footer p {
     font-weight: 400;
     line-height: 40px;
     text-align: center;
+    font-family: 'AcherusGrotesque-ExtraBold', Helvetica, Arial, Sans-Serif;
 }
 
 @media(max-width: 510px) {

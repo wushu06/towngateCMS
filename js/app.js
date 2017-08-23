@@ -1,8 +1,22 @@
 $(document).ready(function($) {
-    $('.bars-parent, #bars').on('click', function() {
+    $('#bars, .bars-parent').on('click', function() {
         $('.menu').toggleClass('widthToggle');
+        var text = $('#bars').text();
+        $('#bars').text(text == "MENU" ? "CLOSE" : "MENU");
         $('.menu-list').fadeToggle();
         $('a').toggleClass('white-hover');
+        if ($('.download').hasClass('active-two')) {
+            $('.download').toggleClass('active-two');
+        }
+        if ($('.view').hasClass('active-two')) {
+            $('.view').toggleClass('active-two');
+        }
+        if ($('.bars-parent').hasClass('change')) {
+            $('.bars-parent').removeClass('change');
+        } else {
+            $('.bars-parent').addClass('change');
+        }
+        //$('.view, .download').toggleClass('active-two');
     });
     $(window).on('load', function() {
         var url = window.location.href;
@@ -16,16 +30,15 @@ $(document).ready(function($) {
         });
         console.log(link.attr("href"));
     });
-    $('.bars-parent').on('click', function() {
+    $(' #bars').on('click', function() {
         if ($(this).hasClass('change')) {
             $(this).removeClass('change');
-            $('#bars').text('MENU');
         } else {
             $(this).addClass('change');
-            $('#bars').text('CLOSE');
         }
     });
-    $('.dotOne').hover(function() {
+    // siteplan page/ show images 
+    $('.dotOne, .text-one').hover(function() {
         $('.dot-one-img').toggle();
     });
     var $grid = $('.grid').imagesLoaded(function() {
@@ -35,7 +48,7 @@ $(document).ready(function($) {
             columnWidth: '.grid-sizer'
         });
     });
-    //toggle fade for main text 
+    //Homepage toggle fade for main text 
     var slider = $('.overlay'),
         children = slider.children('div'),
         lenght = children.length,
@@ -51,17 +64,21 @@ $(document).ready(function($) {
         };
     children.not(':first').hide();
     setInterval(mySlider, 3000);
-    /* Toggle map and aerial  */
+    /* LocationPage Toggle map and aerial  */
     $('#showAerial').on('click', function() {
         $('#aerial').show();
         $('#map').hide();
-        $(this).addClass('white').children("img:first-of-type").show().next("img").hide();
-        $('#showMap').removeClass('white').children("img:first-of-type").hide().next("img").show();
+        $(this).addClass('white');
+        $('#showMap').removeClass('white')
+        $('path').css('fill', '#ffffff !important');
+        $('.st0').css('fill', '#2c2c2b');
     });
     $('#showMap').on('click', function() {
         $('#aerial').hide();
         $('#map').show();
-        $(this).addClass('white').children("img:first-of-type").show().next("img").hide();
-        $('#showAerial').removeClass('white').children("img:first-of-type").hide().next("img").show();
+        $(this).addClass('white');
+        $('#showAerial').removeClass('white')
+        $('.st0').css('fill', '#ffffff !important');
+        $('.st1').css('fill', '#2c2c2b');
     });
 });

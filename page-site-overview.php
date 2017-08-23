@@ -30,10 +30,10 @@
             </div>
              <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="first-img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/Siteoverviewimage1.jpg" alt="" class='img-responsive'>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/Siteoverviewimage1.jpg" alt="" class='img-responsive pull-right'>
                 </div>
                 <div class="second-img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/Siteoverviewimage2.jpg" alt="" class='img-responsive'>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/Siteoverviewimage2.jpg" alt="" class='img-responsive pull-right'>
                 </div>
                  
             </div>

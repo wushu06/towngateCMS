@@ -6,16 +6,16 @@
        
             <div class="col-md-4 col-sm-6 col-xs-12">
              <h2>SITE PLAN</h2>
-                 <p>INDUSTRIAL SPACE</p>
+                 <p class="text-one">INDUSTRIAL SPACE</p>
 
                 <p>COPPER HOUSE <br>
-                (ANCILLARY OFFICE)</p>
+                <span class="lighter">(ANCILLARY OFFICE)</span></p>
 
                 <p>ARIZONA HOUSE<br>
-                (ANCILLARY OFFICE)</p>
+                <span class="lighter">(ANCILLARY OFFICE)</span></p>
 
                 <p>TWO STOREY <br>
-                ANCILLARY OFFICE</p>
+                <span class="lighter">ANCILLARY OFFICE</span></p>
 
                 <p>SECURITY GATE HOUSE</p>
 
@@ -47,7 +47,7 @@
                     <i class="small-dot dotSeven faa-burstBig animated"></i>
 
 
-                    <img class="dot-one-img" src="<?php echo get_template_directory_uri(); ?>/images/dot-one.png" alt="" width="125px"  >
+                    <img class="dot-one-img" src="<?php echo get_template_directory_uri(); ?>/images/dot-one.png" alt="" width="200px"  >
 
                 
                 </div>

@@ -15,7 +15,7 @@
 			<?php the_content(); ?>
 		<?php endwhile; endif; ?>	
         <span class="test"></span>
-    		<p class="required pull-right"> * Required fields.</p>
+    		<p class="required pull-right"> <span class="active-two">*</span> Required fields.</p>
     	</div>
     </div>
 

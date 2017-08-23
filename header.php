@@ -37,7 +37,10 @@
                      <div class="bars barthree pull-right" aria-hidden="true"></div>
                      <div class="bars barfour pull-right" aria-hidden="true"></div>
         </div>
-              <span id='bars' class="menu-icon pull-right" >MENU</span>
+          <div id="menuControl">
+            <span id='bars' class="menu-icon pull-right" >MENU</span>
+            
+          </div>  
               
                <div class="calendar pull-right">
                    <a class="view <?php  if(is_page('book-a-viewing')){ echo 'active-two';}?>" href="<?php echo site_url(); ?>/book-a-viewing">BOOK A VIEWING</a>
@@ -66,8 +69,8 @@
             href="<?php echo site_url();?>/site-plan">SITE PLAN</a></li>
             <li><a class="<?php  if(is_page('gallery')){ echo 'active';}else { echo '';} ?>"
             href="<?php echo site_url();?>/gallery">GALLERY</a></li>
-            <li><a class="<?php  if(is_page('leeds-democraphics')){ echo 'active';}else { echo '';} ?>"
-            href="<?php echo site_url();?>/leeds-democraphics">LEEDS DEMOGRAPHICS</a></li>
+            <li><a class="<?php  if(is_page('leeds-demographics')){ echo 'active';}else { echo '';} ?>"
+            href="<?php echo site_url();?>/leeds-demographics">LEEDS DEMOGRAPHICS</a></li>
              <li><a class="<?php  if(is_page('the-history')){ echo 'active';}else { echo '';} ?>"
              class="<?php  if(is_page('site-overview')){ echo 'active';}else { echo '';} ?>"
              href="<?php echo site_url(); ?>/the-history">THE HISTORY</a></li>

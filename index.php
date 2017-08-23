@@ -11,17 +11,17 @@
       <div class="overlay">
              <div class="text">
                 <h1>Junction 44 M1 &amp;<br>
-                Junction 7 M621<br>
+                Junction 7 M621
                 Motorways
                   </h1>
             </div>
             <div >
-                <h1>Newly refurbished<br>warehouse / manufacturing<br>premises
+                <h1>Newly refurbished warehouse <br>  manufacturing premises
                   </h1>
             </div>
             <div >
-                <h1>40,000 SQ FT <br>
-                 TO 300,000 SQ FT</h1>
+                <h1>40,000 <span class="lighter-two">SQ FT <br>
+                 TO</span> 300,000 SQ <span class="lighter-two">FT</span></h1>
             </div>
              
         </div>
